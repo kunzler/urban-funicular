@@ -1,0 +1,96 @@
+/* this is the css for nav bar */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+ .navMenu {
+    position: fixed;
+    top: 50px;
+    list-style: none;
+    background-color: rgba(245, 243, 242, 0.6);
+    border-radius: 2px 7px 7px 2px;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 10vw;
+    font-size: 18px;
+    padding: 1vw;
+    border: 2px solid black;
+    padding: 5px;
+    margin: 3px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.hidden {
+    display: none;
+}
+
+.navIcon {
+    position: fixed;
+    width: 63px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 3px;
+    margin-left: 5px;
+    text-align: center;
+    color: rgb(72, 29, 112);
+    font-size: 18px;
+    z-index: 10;
+  }
+
+a:visited {
+    color: rgb(32, 7, 54);
+}
+
+.menuLink {
+    background-color: rgb(248, 236, 220);
+}
+
+@media (min-width: 1200px) {
+    .navMenu {
+        width: 10vw;
+        font-size: 16px;
+    }
+
+}
+
+@media (max-width: 1175px) {
+    .navMenu {
+        width: 12vw;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 999px) {
+    .navMenu {
+        width: 14vw;
+        font-size: 16px;
+    }
+    
+}
+
+@media (max-width: 760px) {
+    .navMenu {
+        width: 20vw;
+        font-size: 15px;
+    }
+    
+}
+
+@media (max-width: 500px) {
+    .navMenu {
+        width: 24vw;
+        font-size: 14px;
+    }
+    
+}
+
+@media (max-width: 380px) {
+    .navMenu {
+        width: 28vw;
+        font-size: 13px;
+    }
+    
+}

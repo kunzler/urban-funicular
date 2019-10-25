@@ -1,0 +1,38 @@
+/* this is the css for footer*/
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* font-family: 'Libre Baskerville', serif;
+font-family: 'Quattrocento', serif;
+font-family: 'Cinzel', serif;
+font-family: 'Amatic SC', cursive; */
+
+.footerStyle {
+    width: 100vw;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    /* align-content: center; */
+    text-align: center;
+    background-color: antiquewhite;
+    font-size: 16px;
+    font-family: 'Libre Baskerville', serif;
+    padding: 15px;
+}
+
+
+@media (max-width: 790px) {
+    .footerStyle {
+    font-size: 14px;
+    }
+}
+
+@media (max-width: 390px) {
+    .footerStyle {
+        font-size: 12px;
+    }
+}
+

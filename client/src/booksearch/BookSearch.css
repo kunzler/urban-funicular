@@ -1,0 +1,110 @@
+/* This is the css for book search*/
+* {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+}
+
+.bookSearchsPage {
+    background-image: url("https://s3.amazonaws.com/mk-website-media/wp-content/uploads/2018/10/19000855/Wallpaper-Kemra-Bookshelf-1.jpg");
+    height: 100vh;
+    width: 100vw;
+    background-repeat: repeat-y;
+    background-position: center;
+    background-size: cover;
+    font-family: 'Libre Baskerville', serif;
+    overflow: scroll;
+}
+
+.overlaySearch {
+    position: sticky;
+    background-color: rgba(248, 236, 220, .1);
+}
+
+.display-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    position: absolute;
+    top: 100px;
+}
+
+.displayCard {
+    padding: 50px;
+    align-items: flex-end;
+    text-align: center;
+    display: flex;
+    font-size: 25px;
+    border: 8px outset silver;
+    margin: 8px;
+}
+
+
+.item-button {
+    font-size: 16px;
+    width: 8vw;
+    height: 4vh;
+    margin: 10px;
+    border-radius: 7px;
+    color: rgb(151, 89, 8);
+}
+input {
+    font-size: 16px;
+}
+image {
+    height: 300px;
+    width: auto;
+}
+.item {
+
+    width: 35vw;
+    color: whitesmoke;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.searchForm {
+    position: sticky;
+    display: flex;
+    justify-content: center;
+    top: 0;
+    margin-top: 110px;
+
+}
+
+@media only screen and (max-width: 600px) {
+    .display-container{
+        position: absolute;
+        top: 250px;
+    }
+    body {
+        padding: 0;
+        margin: 0;
+    }
+    
+    .bookSearchsPage{
+        overflow: scroll;
+        height: 100vh;
+        width: 100vw;
+    }
+    .item {
+        font-size: .7em;
+        width: 70vw;
+    }
+    .searchForm{
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        padding-top: 0px;
+        left: 100px;
+        position: absolute;
+        top: 50px;
+        padding: 0px;
+        margin: 0px;
+    }
+    .item-button {
+        width: 16vw;
+    }
+    .displayCard {
+        padding: 0px;
+    }
+}
